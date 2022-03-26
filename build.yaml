@@ -1,0 +1,16 @@
+apiVersion: shipwright.io/v1alpha1
+kind: Build
+metadata:
+  name: nginx-demo
+  annotations:
+    build.build.dev/build-run-deletion: "true"
+spec:
+  source:
+      url: https://github.com/tt5/nginx-demo
+  strategy:
+    name: kaniko
+    kind: ClusterBuildStrategy
+  output:
+    image: docker.io/63061/nginx-demo:latest
+    credentials:
+      name: regcred

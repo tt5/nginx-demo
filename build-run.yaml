@@ -1,0 +1,9 @@
+apiVersion: shipwright.io/v1alpha1
+kind: BuildRun
+metadata:
+  generateName: nginx-demo-
+spec:
+  buildRef:
+    name: nginx-demo
+  output:
+    image: docker.io/63061/nginx-demo:0.0.1

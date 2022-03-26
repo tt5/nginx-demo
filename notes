@@ -1,0 +1,5 @@
+k -n shipwright-build apply -f build.yaml
+
+k -n shipwright-build create -f build-run.yaml
+
+k -n shipwright-build get buildruns
