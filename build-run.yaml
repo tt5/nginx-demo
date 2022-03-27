@@ -6,4 +6,4 @@ spec:
   buildRef:
     name: nginx-demo
   output:
-    image: docker.io/63061/nginx-demo:0.0.1
+    image: docker.io/63061/nginx-demo:0.0.2
