@@ -1,3 +1,12 @@
+FROM node:alpine
+
+WORKDIR /app
+
+COPY ./app /app
+
+RUN npm i vite && vite build
+
+
 FROM nginx:alpine
 
-COPY content /usr/share/nginx/html
+COPY --from=stage0 /app/dist /usr/share/nginx/html
