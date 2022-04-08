@@ -6,11 +6,11 @@ metadata:
 spec:
   template:
     metadata:
-      name: home-v7
+      name: home-v8
       annotations:
         autoscaling.knative.dev/min-scale: "1"
     spec:
       containers:
-        - image: docker.io/63061/nginx-demo:latest
+        - image: <NEW IMAGE>
           ports:
             - containerPort: 80
