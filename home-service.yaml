@@ -6,7 +6,7 @@ metadata:
 spec:
   template:
     metadata:
-      name: home-v9
+      name: home-v11
       annotations:
         autoscaling.knative.dev/min-scale: "1"
     spec:
