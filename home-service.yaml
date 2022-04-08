@@ -1,0 +1,16 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: home
+  namespace: home
+spec:
+  template:
+    metadata:
+      name: home-v5
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+    spec:
+      containers:
+        - image: docker.io/63061/nginx-demo:latest
+          ports:
+            - containerPort: 80
