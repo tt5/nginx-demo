@@ -6,7 +6,7 @@ metadata:
 spec:
   template:
     metadata:
-      generateName: home-
+      name: <NEW NAME>
       annotations:
         autoscaling.knative.dev/min-scale: "1"
     spec:
