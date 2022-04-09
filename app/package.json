@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.50.0"
+  },
+  "dependencies": {
+    "alpine": "^0.2.1"
   }
 }
