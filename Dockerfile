@@ -4,8 +4,7 @@ WORKDIR /app
 
 COPY ./app /app
 
-RUN npm i && npx vite build
-
+RUN npm i && npm run build
 
 FROM nginx:alpine
 
