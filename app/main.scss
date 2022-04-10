@@ -1,6 +1,25 @@
 @import 'styles/colors';
 
 body {
-  background-color: lightcyan;
-  margin: 0;
+  background-color: $bg;
+}
+
+.container {
+  @apply p-2;
+}
+
+.title {
+  @apply text-5xl font-bold pt-4 pb-4;
+}
+
+.subtitle {
+  @apply text-2xl font-bold py-1;
+}
+
+.link {
+  @apply text-blue-900 underline;
+}
+
+.text {
+  @apply pb-1;
 }
