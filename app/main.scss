@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  @apply p-2;
+    @apply p-2 w-screen h-screen;
 }
 
 .title {
@@ -22,4 +22,13 @@ body {
 
 .text {
   @apply pb-1;
+}
+
+.flex-y {
+  @apply flex flex-col;
+  justify-content: space-between;
+}
+
+.bg-blue {
+  @apply bg-blue-400;
 }

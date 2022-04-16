@@ -5,23 +5,35 @@
     <title>Tt5's Homepage</title>
     <script type="module" src="/main.js"></script>
   </head>
-  <body class="container">
-    <h1 class="title">Hello</h1>
-    <h2 class="subtitle">About</h2>
-    <ul class="text">
-      <li><a class="link" href="https://github.com/tt5">github</a></li>
-    </ul>
-    <h2 class="subtitle">Projects</h2>
-    <ul class="text">
-      <li>
-        <a class="link" href="https://test.default.hello123.tk">test</a>
-      </li>
-    </ul>
-    <h2 class="subtitle">Tools</h2>
-    <ul>
-      <li>kubernetes, knative, tekton</li>
-      <li>vite, sass, windicss, alpinejs</li>
-      <li>neovim, tmux, termux, firefox (arm), tablet, keyboard</li>
-    </ul>
+  <body class="container flex-y">
+    <nav class="bg-blue">tt5</nav>
+    <main class="grid grid-cols-2 gap-4">
+      <header class="row-span-2">
+        <h1 class="title">Hello</h1>
+      </header>
+      <section>
+        <h2 class="subtitle">About</h2>
+        <ul class="text">
+          <li><a class="link" href="https://github.com/tt5">github</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="subtitle">Projects</h2>
+        <ul class="text">
+          <li>
+            <a class="link" href="https://test.default.hello123.tk">test</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="subtitle">Tools</h2>
+        <ul>
+          <li>kubernetes, knative, tekton</li>
+          <li>vite, sass, windicss, alpinejs</li>
+          <li>neovim, tmux, termux, firefox (arm), tablet, keyboard</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="bg-blue">tt5</footer>
   </body>
 </html>
