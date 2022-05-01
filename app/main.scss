@@ -29,6 +29,14 @@ body {
   justify-content: space-between;
 }
 
+.flex-y2 {
+  @apply h-300px inline-flex flex-col flex-wrap;
+}
+
+.flex-item-y2 {
+  @apply min-w-300px w-300px py-5;
+}
+
 .bg-blue {
   @apply bg-blue-400;
 }
